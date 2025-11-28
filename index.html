@@ -1,0 +1,77 @@
+<html>
+     <head>
+        <title> Sito di Halloween </title> <!-- esce nella barra in alto-->
+		
+		<style>
+		
+		body {
+		    display: flex;
+			justify-content: center;
+			align-items: center;
+		
+		.link {
+		    transition.2s <!-- ci mette due secondi per fare la transizione sia prima che dopo-->
+		     color : #fc05db;
+			 background: #00baf2;
+		     margin-right: 16px <!-- per spostare a destra di un po'-->
+		}
+		
+		.link:hover {
+		    font-size: 32px; <!-- quando passi sopra il link diventa grande e cambia colore-->
+			color: #b17be0;
+			background: yellow;
+			rotate: 360deg;
+		}
+		
+		.link2 {
+		    color : #fc0505;
+		}
+		
+		.link2: hover {
+		    font-size: 32px;
+			color: #03ffee;
+			rotate: 360deg;
+		}
+		
+		<!-- se voglio cambiare il colore del link di wikipedia--> 
+		</style>
+	 </head>
+ 
+     <body>
+	    
+		<a href = "https://wikipedia.it" 
+		target ="_blank"
+        class = "link"> <!-- se voglio parlare di tutti i link uso a, se voglio solo uno allora uso a-->
+		
+		Wikipedia</a> <br> <!--target si usa per far aprire in un'altra pagina-->
+		
+		
+		<a href = "https://www.bing.com/ck/a?!&&p=0c65bcf29386848afad495ac44fa2f5d6891dcd80b03517e3878d3eba5a26745JmltdHM9MTc2MTg2ODgwMA&ptn=3&ver=2&hsh=4&fclid=3ec419c1-f7f5-69e5-3eaf-0cecf68268d9&u=a1L2ltYWdlcy9zZWFyY2g_cT1pbW1hZ2luZStwYXVyb3NhJmlkPUEyRTI2NTlBMjUzRDU0QjJERTE4Mjc3OTcxQTYwREY4MUIwRDQyRUQmRk9STT1JUUZSQkE"
+		target ="_blank"
+		class = "link2"> 
+		
+		Apri subito</a>
+		
+		<!--<p> Paragrafo</p>-->
+		
+		<!-- per mettere un commento-->
+		
+		<div id="bottone"> cliccami!</div>
+		<script>
+		    const bottone = document.querySelector("#bottone")
+		
+		bottone.addEventListener("click", () => {
+		consol.log("Cliccato");
+		
+		// aggiunge la claasse "classe" a bottone
+		bottone.classList.add("classe")
+		
+		}
+		</script>
+		
+	 </body>
+
+
+
+
+</html>
